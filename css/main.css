@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap");
+.ctaBtn--primary, .ctaBtn--secondary {
+  display: inline-block;
+  padding: 0.3em 1em;
+  border-radius: 5rem;
+  transition: opacity 100ms ease-in-out;
+}
+
+.ctaBtn--primary:hover, .ctaBtn--secondary:hover {
+  opacity: 0.75;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.u-primaryText {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
+
+.u-primaryText--color {
+  color: #a59678;
+}
+
+.u-secondaryText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+
+.u-secondaryText--color {
+  color: #6f737f;
+}
+
+.MainHeader {
+  background-color: #2e323f;
+}
+
+.MainHeader-nav {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-size: clamp(0.875rem, 3vw, 1.125rem);
+}
+
+.MainHero {
+  background-color: #3b4050;
+}
+
+.MainHero-heading {
+  color: #ffffff;
+  font-size: 5.625rem;
+  font-size: clamp(3rem, 8vw, 5.625rem);
+  line-height: 1.15em;
+}
+
+.MainHero-subHeading {
+  font-size: 1.5rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  line-height: 1.3em;
+}
+
+.MainHero-ctaLink {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #a59678;
+  font-size: 1.5rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.MainFeatures {
+  background-color: #f1f1f1;
+}
+
+.MainFeatures-heading {
+  font-size: 1.875rem;
+  font-size: clamp(1.5rem, 5vw, 1.875rem);
+  text-align: center;
+}
+
+.MainFeatures-desc {
+  font-size: 1.125rem;
+  font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+  text-align: center;
+}
+
+.MainSteps-article {
+  background-color: #ffffff;
+}
+
+.MainSteps-articleHeading {
+  font-size: 2.25rem;
+  font-size: clamp(1.625rem, 6vw, 2.25rem);
+  line-height: 1.15em;
+}
+
+.MainSteps-articleDesc {
+  font-size: 1.3125rem;
+  font-size: clamp(1rem, 3vw, 1.3125rem);
+  line-height: 1.4em;
+}
+
+.MainSteps-articleImg {
+  max-width: 100%;
+}
+
+.MainSteps-step {
+  background-color: #3b4050;
+}
+
+.MainSteps-stepHeading {
+  color: #ffffff;
+  font-size: 1.875rem;
+  font-size: clamp(1.375rem, 5vw, 1.875rem);
+  text-align: center;
+}
+
+.MainSteps-stepDesc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.125rem;
+  font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+  text-align: center;
+  line-height: 1.4em;
+}
+
+.MainFooter {
+  background-color: #3b4050;
+}
+
+.MainFooter-heading {
+  color: #ffffff;
+  font-size: 2.75rem;
+  font-size: clamp(1.875rem, 7vw, 2.75rem);
+  line-height: 1.2em;
+}
+
+.MainFooter-infoHeading {
+  font-size: 1.3125rem;
+  font-size: clamp(1rem, 3.5vw, 1.3125rem);
+  line-height: 1.5em;
+}
+
+.MainFooter-aboutDesc {
+  font-size: 1rem;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  line-height: 1.35em;
+}
+
+.MainFooter-infoList {
+  font-size: 1rem;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  line-height: 1.8em;
+}
+
+.u-Container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.MainHeader {
+  position: relative;
+  padding: 1.1em 0;
+}
+
+.MainHeader .dFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MainHeader-nav {
+  display: none;
+}
+
+.MainHeader-navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MainHeader-navListItem + .MainHeader-navListItem {
+  margin-top: 0.5em;
+}
+
+.MainHeader-hamburger {
+  position: absolute;
+  top: 1em;
+  right: 1.1em;
+}
+
+.MainHeader .navActive {
+  display: flex;
+}
+
+.MainHero {
+  padding: 2em 0;
+}
+
+.MainHero .dFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MainHero-heading {
+  padding-bottom: 0.3em;
+}
+
+.MainHero-subHeading {
+  padding-bottom: 1.2em;
+}
+
+.MainFeatures {
+  padding: 2em 0;
+}
+
+.MainFeatures .dFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MainFeatures-feature + .MainFeatures-feature {
+  padding-top: 1em;
+}
+
+.MainFeatures-heading {
+  margin-bottom: 0.3em;
+}
+
+.MainSteps {
+  padding: 2em 0;
+}
+
+.MainSteps .dFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MainSteps-articleHeading {
+  margin-bottom: 0.5em;
+}
+
+.MainSteps-articleDesc:last-child {
+  margin-bottom: 2em;
+}
+
+.MainSteps-articleImg {
+  margin: 1em 0;
+}
+
+.MainSteps-step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.3em;
+}
+
+.MainSteps-step + .MainSteps-step {
+  margin-top: 1.5em;
+}
+
+.MainSteps-stepHeading {
+  margin-bottom: 0.4em;
+}
+
+.MainFooter {
+  padding: 2em 0;
+}
+
+.MainFooter-heading {
+  margin-bottom: 0.6em;
+}
+
+.MainFooter-moreInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-gap: 0.9375rem;
+}
+
+.MainFooter-infoHeading {
+  margin-bottom: 0.3em;
+}
+
+.ctaBtn--primary {
+  background-color: #a59678;
+}
+
+.ctaBtn--secondary {
+  border: #a59678 1px solid;
+  background-color: transparent;
+}
+
+.u-NavToggle {
+  cursor: pointer;
+  border: none;
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  transition: opacity 100ms ease-in-out;
+}
+
+.u-NavToggle:hover {
+  opacity: 0.75;
+}
+
+.u-Hamburger {
+  position: absolute;
+  top: 50%;
+  left: 50;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 4px;
+  background-color: #3b4050;
+  border-radius: 5rem;
+}
+
+.u-Hamburger::before, .u-Hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 5rem;
+  background-color: #3b4050;
+}
+
+.u-Hamburger::before {
+  transform: translateY(-7px);
+}
+
+.u-Hamburger::after {
+  transform: translateY(7px);
+}
+
+@media (min-width: 700px) {
+  .MainHeader .dFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .MainHeader-nav {
+    display: flex;
+  }
+  .MainHeader-navList {
+    flex-direction: row;
+  }
+  .MainHeader-navListItem + .MainHeader-navListItem {
+    margin-top: 0;
+    margin-left: 1.5em;
+  }
+  .MainHeader-hamburger {
+    display: none;
+  }
+  .MainHero {
+    padding: 4em 0;
+  }
+  .MainHero .dFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .MainHero-heading {
+    padding-bottom: 0.4em;
+  }
+  .MainHero-subHeading {
+    padding-bottom: 1.5em;
+  }
+  .MainFeatures {
+    padding: 4em 0;
+  }
+  .MainFeatures-feature + .MainFeatures-feature {
+    padding-top: 1.4em;
+  }
+  .MainFeatures-heading {
+    margin-bottom: 0.5em;
+  }
+  .MainSteps {
+    padding: 4em 0;
+  }
+  .MainSteps-articleHeading {
+    margin-bottom: 0.7em;
+  }
+  .MainSteps-articleDesc:last-child {
+    margin-bottom: 3em;
+  }
+  .MainSteps-articleImg {
+    margin: 1.5em 0;
+  }
+  .MainSteps-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+  }
+  .MainSteps-step {
+    padding: 1.5em;
+  }
+  .MainSteps-step + .MainSteps-step {
+    margin-top: 0;
+    margin-left: 1.5em;
+  }
+  .MainSteps-stepHeading {
+    margin-bottom: 0.5em;
+  }
+  .MainFooter {
+    padding: 4em 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .MainHero {
+    padding: 5em 0;
+  }
+  .MainHero .dFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .MainHero-cta {
+    align-self: flex-end;
+    margin-left: 1em;
+  }
+  .MainHero-heading {
+    padding-bottom: 0;
+  }
+  .MainFeatures {
+    padding: 5em 0;
+  }
+  .MainFeatures .dFlex {
+    flex-direction: row;
+  }
+  .MainFeatures-feature {
+    flex: 1;
+  }
+  .MainFeatures-feature + .MainFeatures-feature {
+    padding-top: 0;
+    padding-left: 3em;
+  }
+  .MainSteps {
+    padding: 5em 0;
+  }
+  .MainSteps .dFlex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .MainSteps-article {
+    width: 55%;
+  }
+  .MainSteps-articleHeading {
+    margin-bottom: 0.7em;
+  }
+  .MainSteps-articleDesc:last-child {
+    margin-bottom: 0;
+  }
+  .MainSteps-articleImg {
+    margin: 1.5em 0;
+  }
+  .MainSteps-steps {
+    flex-direction: column;
+    width: 35%;
+  }
+  .MainSteps-step {
+    padding: 1.5em;
+  }
+  .MainSteps-step + .MainSteps-step {
+    margin-left: 0;
+    margin-top: 1.5em;
+  }
+  .MainSteps-stepHeading {
+    margin-bottom: 0.5em;
+  }
+  .MainFooter {
+    padding: 5em 0;
+  }
+  .MainFooter-heading {
+    text-align: center;
+    margin-bottom: 0.8em;
+  }
+}
